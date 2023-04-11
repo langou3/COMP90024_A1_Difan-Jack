@@ -9,8 +9,6 @@
 #SBATCH --output=Outputs/slurm.%N.%j.out
 #SBATCH --error=Outputs/slurm.%N.%j.err
 
-
-module purge
 module load foss/2019b
 module load python/3.7.4
 module load mpi4py/3.0.2-timed-pingpong
