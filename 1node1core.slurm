@@ -15,19 +15,19 @@ module load foss/2019b
 module load python/3.7.4
 module load mpi4py/3.0.2-timed-pingpong
 
-mkdir virtualenv
+##mkdir virtualenv
 virtualenv ~/virtualenv/python3.7.4
 source ~/virtualenv/python3.7.4/bin/activate
-pip install json
-pip install time
-pip install re
-pip install os
-pip install collections
-pip install pandas
+##pip install json
+##pip install time
+##pip install re
+##pip install os
+##pip install collections
+##pip install pandas
 
 
 
-srun -n 1 python3 process.py
+srun -n 1 python3 twitterProcess.py
 deactivate
 ##Job monitor command to list the resource usage
 my-job-stats -a -n -s
